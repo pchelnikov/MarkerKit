@@ -37,6 +37,8 @@ public extension MarkerView {
 public struct MarkerConstraintView {
     
     //MARK: public
+    
+    //MARK: filling
     @discardableResult
     public func fillSuperview(_ edges: UIEdgeInsets = UIEdgeInsets.zero) -> [NSLayoutConstraint] {
         var constraints: [NSLayoutConstraint] = []
@@ -53,6 +55,7 @@ public struct MarkerConstraintView {
         return constraints
     }
     
+    //MARK: sides
     @discardableResult
     public func leading(to view: Any?, attribute: NSLayoutAttribute = .leading, relation: NSLayoutRelation = .equal, constant: CGFloat = 0.0) -> NSLayoutConstraint {
         let constraint = makeConstraint(attribute: .leading, toView: view, attribute: attribute, relation: relation, constant: constant)
@@ -95,9 +98,24 @@ public struct MarkerConstraintView {
         return constraint
     }
     
+    //MARK: centering
+    @discardableResult
+    public func centerX(to view: Any?) -> NSLayoutConstraint {
+        let constraint = makeConstraint(attribute: .centerX, toView: view, attribute: .centerX, relation: .equal, constant: 0.0)
+        addConstraintToSuperview(constraint)
+        return constraint
+    }
+    
     @discardableResult
     public func centerX(to view: Any?, relation: NSLayoutRelation = .equal, constant: CGFloat = 0.0) -> NSLayoutConstraint {
         let constraint = makeConstraint(attribute: .centerX, toView: view, attribute: .centerX, relation: relation, constant: constant)
+        addConstraintToSuperview(constraint)
+        return constraint
+    }
+    
+    @discardableResult
+    public func centerY(to view: Any?) -> NSLayoutConstraint {
+        let constraint = makeConstraint(attribute: .centerY, toView: view, attribute: .centerY, relation: .equal, constant: 0.0)
         addConstraintToSuperview(constraint)
         return constraint
     }
@@ -108,7 +126,22 @@ public struct MarkerConstraintView {
         addConstraintToSuperview(constraint)
         return constraint
     }
+    
+    @discardableResult
+    public func center(to view: Any?) -> [NSLayoutConstraint] {
+        var constraints: [NSLayoutConstraint] = []
+        
+        if let superview = self.view.superview {
+            let centerXConstraint = centerX(to: superview)
+            let centerYConstraint = centerY(to: superview)
+            
+            constraints = [centerXConstraint, centerYConstraint]
+        }
+        
+        return constraints
+    }
 
+    //MARK: measurement
     @discardableResult
     public func width(to view: Any?, relation: NSLayoutRelation = .equal, constant: CGFloat) -> NSLayoutConstraint {
         let constraint = makeConstraint(attribute: .width, toView: view, attribute: .width, relation: relation, constant: constant)
@@ -136,6 +169,7 @@ public struct MarkerConstraintView {
         addConstraintToSuperview(constraint)
         return constraint
     }
+    
     
     //MARK: private
     fileprivate func addConstraintToSuperview(_ constraint: NSLayoutConstraint) {

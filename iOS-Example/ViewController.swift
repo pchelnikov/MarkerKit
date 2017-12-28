@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     private let leftTopView = UIView()
     private let rightBottomView = UIView()
     private let centerView = UIView()
+    private let secondCenterView = UIView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,10 +28,12 @@ class ViewController: UIViewController {
         leftTopView.backgroundColor = UIColor.blue.withAlphaComponent(0.5)
         rightBottomView.backgroundColor = UIColor.green.withAlphaComponent(0.5)
         centerView.backgroundColor = UIColor.red.withAlphaComponent(0.5)
+        secondCenterView.backgroundColor = UIColor.yellow.withAlphaComponent(0.5)
         
         view.addSubview(leftTopView)
         view.addSubview(rightBottomView)
         view.addSubview(centerView)
+        view.addSubview(secondCenterView)
     }
     
     private func setupConstraints() {
@@ -44,10 +47,14 @@ class ViewController: UIViewController {
         rightBottomView.mrk.bottom(to: view, attribute: .bottom, relation: .equal, constant: -20)
         rightBottomView.mrk.height(30)
         
-        centerView.mrk.centerX(to: view)
-        centerView.mrk.centerY(to: view)
+        centerView.mrk.center(to: view)
         centerView.mrk.width(100)
         centerView.mrk.height(100)
+        
+        secondCenterView.mrk.top(to: centerView, attribute: .bottom, relation: .equal, constant: 20)
+        secondCenterView.mrk.centerX(to: centerView, relation: .equal, constant: 30)
+        secondCenterView.mrk.width(100)
+        secondCenterView.mrk.height(50)
     }
 }
 
