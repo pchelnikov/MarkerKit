@@ -1,3 +1,5 @@
+![MarkerKit](https://github.com/pchelnikov/MarkerKit/blob/master/Assets/marker-kit.jpg)
+
 # MarkerKit
 Lightweight and easy to use wrapper for Auto Layout Constraints, inspired by: [https://github.com/ustwo/autolayout-helper-swift](https://github.com/ustwo/autolayout-helper-swift)
 
