@@ -10,33 +10,44 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    private let squareView = UIView()
+    private let leftTopView = UIView()
+    private let rightBottomView = UIView()
+    private let centerView = UIView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupViews()
         setupConstraints()
-        bind()
     }
     
     private func setupViews() {
-        view.backgroundColor = UIColor.gray
+        view.backgroundColor = UIColor.white
         
-        squareView.backgroundColor = UIColor.red.withAlphaComponent(0.2)
+        leftTopView.backgroundColor = UIColor.blue.withAlphaComponent(0.5)
+        rightBottomView.backgroundColor = UIColor.green.withAlphaComponent(0.5)
+        centerView.backgroundColor = UIColor.red.withAlphaComponent(0.5)
         
-        view.addSubview(squareView)
+        view.addSubview(leftTopView)
+        view.addSubview(rightBottomView)
+        view.addSubview(centerView)
     }
     
     private func setupConstraints() {
-        squareView.mrk.centerX(to: view)
-        squareView.mrk.centerY(to: view)
-        squareView.mrk.width(100)
-        squareView.mrk.height(100)
-    }
-    
-    private func bind() {
+        leftTopView.mrk.leading(to: view, attribute: .leading, relation: .equal, constant: 20)
+        leftTopView.mrk.top(to: view, attribute: .top, relation: .equal, constant: 50)
+        leftTopView.mrk.width(30)
+        leftTopView.mrk.height(30)
         
+        rightBottomView.mrk.leading(to: view, attribute: .leading, relation: .equal, constant: 20)
+        rightBottomView.mrk.trailing(to: view, attribute: .trailing, relation: .equal, constant: -20)
+        rightBottomView.mrk.bottom(to: view, attribute: .bottom, relation: .equal, constant: -20)
+        rightBottomView.mrk.height(30)
+        
+        centerView.mrk.centerX(to: view)
+        centerView.mrk.centerY(to: view)
+        centerView.mrk.width(100)
+        centerView.mrk.height(100)
     }
 }
 
