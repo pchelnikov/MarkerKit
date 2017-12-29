@@ -100,22 +100,8 @@ public struct MarkerConstraintView {
     
     //MARK: centering
     @discardableResult
-    public func centerX(to view: Any?) -> NSLayoutConstraint {
-        let constraint = makeConstraint(attribute: .centerX, toView: view, attribute: .centerX, relation: .equal, constant: 0.0)
-        addConstraintToSuperview(constraint)
-        return constraint
-    }
-    
-    @discardableResult
     public func centerX(to view: Any?, relation: NSLayoutRelation = .equal, constant: CGFloat = 0.0) -> NSLayoutConstraint {
         let constraint = makeConstraint(attribute: .centerX, toView: view, attribute: .centerX, relation: relation, constant: constant)
-        addConstraintToSuperview(constraint)
-        return constraint
-    }
-    
-    @discardableResult
-    public func centerY(to view: Any?) -> NSLayoutConstraint {
-        let constraint = makeConstraint(attribute: .centerY, toView: view, attribute: .centerY, relation: .equal, constant: 0.0)
         addConstraintToSuperview(constraint)
         return constraint
     }

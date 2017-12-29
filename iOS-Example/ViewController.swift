@@ -51,10 +51,9 @@ class ViewController: UIViewController {
         centerView.mrk.width(100)
         centerView.mrk.height(100)
         
-        secondCenterView.mrk.top(to: centerView, attribute: .bottom, relation: .equal, constant: 20)
-        secondCenterView.mrk.centerX(to: centerView, relation: .equal, constant: 30)
+        secondCenterView.mrk.top(to: centerView, attribute: .centerY, relation: .equal, constant: 10)
+        secondCenterView.mrk.leading(to: centerView, attribute: .centerX, relation: .equal, constant: 0)
         secondCenterView.mrk.width(100)
-        secondCenterView.mrk.height(50)
+        secondCenterView.mrk.height(70)
     }
 }
-
