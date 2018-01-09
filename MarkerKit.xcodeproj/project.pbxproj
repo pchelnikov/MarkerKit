@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C6899D422004FC550060EA46 /* MarkerKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C6D1794E1FF6557800D0FE3A /* MarkerKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C6C5CC981FF3E01000834B1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C5CC971FF3E01000834B1B /* AppDelegate.swift */; };
 		C6C5CC9A1FF3E01000834B1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C5CC991FF3E01000834B1B /* ViewController.swift */; };
 		C6C5CC9F1FF3E01000834B1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6C5CC9E1FF3E01000834B1B /* Assets.xcassets */; };
@@ -133,6 +134,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6899D422004FC550060EA46 /* MarkerKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,7 +498,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/MarkerKit/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -521,7 +523,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/MarkerKit/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
