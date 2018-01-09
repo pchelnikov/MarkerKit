@@ -24,6 +24,16 @@ target 'MyApp' do
 end
 ```
 
+#### Carthage 
+You can use [Carthage](https://github.com/Carthage/Carthage). 
+Specify in Cartfile:
+
+```bash
+github "pchelnikov/MarkerKit"
+```
+
+Run `carthage` to build the framework and drag the built MarkerKit.framework into your Xcode project. Follow [build instructions](https://github.com/Carthage/Carthage#getting-started).
+
 ### Manually
 
 - Add the `MarkerKit.swift` file to your Xcode project.
@@ -132,8 +142,6 @@ UIView.animate(withDuration: 0.3) {
 ```
 
 ## What to do next
-* CocoaPods suppot
-* Carthage support
 * Swift Package Manager support
 * Writing tests
 
