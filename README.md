@@ -11,6 +11,19 @@ Lightweight and easy to use wrapper for Auto Layout Constraints (iOS 8+ support)
 
 ## Installation
 
+### CocoaPods
+
+You can use [CocoaPods](http://cocoapods.org/?q=MarkerKit).
+
+```bash
+platform :ios, '8.0'
+use_frameworks!
+
+target 'MyApp' do
+  pod 'MarkerKit'
+end
+```
+
 ### Manually
 
 - Add the `MarkerKit.swift` file to your Xcode project.

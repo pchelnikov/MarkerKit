@@ -12,8 +12,8 @@
 		C6C5CC9F1FF3E01000834B1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6C5CC9E1FF3E01000834B1B /* Assets.xcassets */; };
 		C6C5CCA21FF3E01000834B1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6C5CCA01FF3E01000834B1B /* LaunchScreen.storyboard */; };
 		C6C5CCAD1FF3E01000834B1B /* MarkerKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C5CCAC1FF3E01000834B1B /* MarkerKitTests.swift */; };
-		C6C5CCB81FF3E01000834B1B /* MarkerKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C5CCB71FF3E01000834B1B /* MarkerKitUITests.swift */; };
 		C6D179441FF4E6E500D0FE3A /* MarkerKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D179431FF4E6E500D0FE3A /* MarkerKit.swift */; };
+		C6D179541FF6562600D0FE3A /* MarkerKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D179431FF4E6E500D0FE3A /* MarkerKit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,17 +24,10 @@
 			remoteGlobalIDString = C6C5CC931FF3E01000834B1B;
 			remoteInfo = MarkerKit;
 		};
-		C6C5CCB41FF3E01000834B1B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C6C5CC8C1FF3E01000834B1B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C6C5CC931FF3E01000834B1B;
-			remoteInfo = MarkerKit;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C6C5CC941FF3E01000834B1B /* MarkerKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarkerKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6C5CC941FF3E01000834B1B /* iOSExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6C5CC971FF3E01000834B1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6C5CC991FF3E01000834B1B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C6C5CC9E1FF3E01000834B1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -43,10 +36,10 @@
 		C6C5CCA81FF3E01000834B1B /* MarkerKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarkerKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6C5CCAC1FF3E01000834B1B /* MarkerKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerKitTests.swift; sourceTree = "<group>"; };
 		C6C5CCAE1FF3E01000834B1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C6C5CCB31FF3E01000834B1B /* MarkerKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarkerKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C6C5CCB71FF3E01000834B1B /* MarkerKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerKitUITests.swift; sourceTree = "<group>"; };
-		C6C5CCB91FF3E01000834B1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6D179431FF4E6E500D0FE3A /* MarkerKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerKit.swift; sourceTree = "<group>"; };
+		C6D1794C1FF6557800D0FE3A /* MarkerKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MarkerKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6D1794E1FF6557800D0FE3A /* MarkerKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarkerKit.h; sourceTree = "<group>"; };
+		C6D1794F1FF6557800D0FE3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +57,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C6C5CCB01FF3E01000834B1B /* Frameworks */ = {
+		C6D179481FF6557800D0FE3A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -80,7 +73,7 @@
 				C6C5CCC51FF3E03000834B1B /* Sources */,
 				C6C5CC961FF3E01000834B1B /* iOS-Example */,
 				C6C5CCAB1FF3E01000834B1B /* MarkerKitTests */,
-				C6C5CCB61FF3E01000834B1B /* MarkerKitUITests */,
+				C6D1794D1FF6557800D0FE3A /* MarkerKit */,
 				C6C5CC951FF3E01000834B1B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,9 +81,9 @@
 		C6C5CC951FF3E01000834B1B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C6C5CC941FF3E01000834B1B /* MarkerKit.app */,
+				C6C5CC941FF3E01000834B1B /* iOSExample.app */,
 				C6C5CCA81FF3E01000834B1B /* MarkerKitTests.xctest */,
-				C6C5CCB31FF3E01000834B1B /* MarkerKitUITests.xctest */,
+				C6D1794C1FF6557800D0FE3A /* MarkerKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,15 +109,6 @@
 			path = MarkerKitTests;
 			sourceTree = "<group>";
 		};
-		C6C5CCB61FF3E01000834B1B /* MarkerKitUITests */ = {
-			isa = PBXGroup;
-			children = (
-				C6C5CCB71FF3E01000834B1B /* MarkerKitUITests.swift */,
-				C6C5CCB91FF3E01000834B1B /* Info.plist */,
-			);
-			path = MarkerKitUITests;
-			sourceTree = "<group>";
-		};
 		C6C5CCC51FF3E03000834B1B /* Sources */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,12 +117,31 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
+		C6D1794D1FF6557800D0FE3A /* MarkerKit */ = {
+			isa = PBXGroup;
+			children = (
+				C6D1794E1FF6557800D0FE3A /* MarkerKit.h */,
+				C6D1794F1FF6557800D0FE3A /* Info.plist */,
+			);
+			path = MarkerKit;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		C6D179491FF6557800D0FE3A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		C6C5CC931FF3E01000834B1B /* MarkerKit */ = {
+		C6C5CC931FF3E01000834B1B /* iOSExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C6C5CCBC1FF3E01000834B1B /* Build configuration list for PBXNativeTarget "MarkerKit" */;
+			buildConfigurationList = C6C5CCBC1FF3E01000834B1B /* Build configuration list for PBXNativeTarget "iOSExample" */;
 			buildPhases = (
 				C6C5CC901FF3E01000834B1B /* Sources */,
 				C6C5CC911FF3E01000834B1B /* Frameworks */,
@@ -148,9 +151,9 @@
 			);
 			dependencies = (
 			);
-			name = MarkerKit;
+			name = iOSExample;
 			productName = MarkerKit;
-			productReference = C6C5CC941FF3E01000834B1B /* MarkerKit.app */;
+			productReference = C6C5CC941FF3E01000834B1B /* iOSExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 		C6C5CCA71FF3E01000834B1B /* MarkerKitTests */ = {
@@ -171,23 +174,23 @@
 			productReference = C6C5CCA81FF3E01000834B1B /* MarkerKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		C6C5CCB21FF3E01000834B1B /* MarkerKitUITests */ = {
+		C6D1794B1FF6557800D0FE3A /* MarkerKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C6C5CCC21FF3E01000834B1B /* Build configuration list for PBXNativeTarget "MarkerKitUITests" */;
+			buildConfigurationList = C6D179511FF6557800D0FE3A /* Build configuration list for PBXNativeTarget "MarkerKit" */;
 			buildPhases = (
-				C6C5CCAF1FF3E01000834B1B /* Sources */,
-				C6C5CCB01FF3E01000834B1B /* Frameworks */,
-				C6C5CCB11FF3E01000834B1B /* Resources */,
+				C6D179471FF6557800D0FE3A /* Sources */,
+				C6D179481FF6557800D0FE3A /* Frameworks */,
+				C6D179491FF6557800D0FE3A /* Headers */,
+				C6D1794A1FF6557800D0FE3A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C6C5CCB51FF3E01000834B1B /* PBXTargetDependency */,
 			);
-			name = MarkerKitUITests;
-			productName = MarkerKitUITests;
-			productReference = C6C5CCB31FF3E01000834B1B /* MarkerKitUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
+			name = MarkerKit;
+			productName = MarkerKit;
+			productReference = C6D1794C1FF6557800D0FE3A /* MarkerKit.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -208,10 +211,9 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = C6C5CC931FF3E01000834B1B;
 					};
-					C6C5CCB21FF3E01000834B1B = {
+					C6D1794B1FF6557800D0FE3A = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
-						TestTargetID = C6C5CC931FF3E01000834B1B;
 					};
 				};
 			};
@@ -228,9 +230,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C6C5CC931FF3E01000834B1B /* MarkerKit */,
+				C6D1794B1FF6557800D0FE3A /* MarkerKit */,
+				C6C5CC931FF3E01000834B1B /* iOSExample */,
 				C6C5CCA71FF3E01000834B1B /* MarkerKitTests */,
-				C6C5CCB21FF3E01000834B1B /* MarkerKitUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -252,7 +254,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C6C5CCB11FF3E01000834B1B /* Resources */ = {
+		C6D1794A1FF6557800D0FE3A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -280,11 +282,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C6C5CCAF1FF3E01000834B1B /* Sources */ = {
+		C6D179471FF6557800D0FE3A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6C5CCB81FF3E01000834B1B /* MarkerKitUITests.swift in Sources */,
+				C6D179541FF6562600D0FE3A /* MarkerKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,13 +295,8 @@
 /* Begin PBXTargetDependency section */
 		C6C5CCAA1FF3E01000834B1B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C6C5CC931FF3E01000834B1B /* MarkerKit */;
+			target = C6C5CC931FF3E01000834B1B /* iOSExample */;
 			targetProxy = C6C5CCA91FF3E01000834B1B /* PBXContainerItemProxy */;
-		};
-		C6C5CCB51FF3E01000834B1B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C6C5CC931FF3E01000834B1B /* MarkerKit */;
-			targetProxy = C6C5CCB41FF3E01000834B1B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -431,7 +428,7 @@
 				INFOPLIST_FILE = "iOS-Example/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pchelnikov.MarkerKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pchelnikov.MarkerKitiOSExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -447,7 +444,7 @@
 				INFOPLIST_FILE = "iOS-Example/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pchelnikov.MarkerKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pchelnikov.MarkerKitiOSExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -488,35 +485,53 @@
 			};
 			name = Release;
 		};
-		C6C5CCC31FF3E01000834B1B /* Debug */ = {
+		C6D179521FF6557800D0FE3A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = D54US7N29T;
-				INFOPLIST_FILE = MarkerKitUITests/Info.plist;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pchelnikov.MarkerKitUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pchelnikov.MarkerKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = MarkerKit;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		C6C5CCC41FF3E01000834B1B /* Release */ = {
+		C6D179531FF6557800D0FE3A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = D54US7N29T;
-				INFOPLIST_FILE = MarkerKitUITests/Info.plist;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pchelnikov.MarkerKitUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pchelnikov.MarkerKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = MarkerKit;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -532,7 +547,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C6C5CCBC1FF3E01000834B1B /* Build configuration list for PBXNativeTarget "MarkerKit" */ = {
+		C6C5CCBC1FF3E01000834B1B /* Build configuration list for PBXNativeTarget "iOSExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C6C5CCBD1FF3E01000834B1B /* Debug */,
@@ -550,11 +565,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C6C5CCC21FF3E01000834B1B /* Build configuration list for PBXNativeTarget "MarkerKitUITests" */ = {
+		C6D179511FF6557800D0FE3A /* Build configuration list for PBXNativeTarget "MarkerKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C6C5CCC31FF3E01000834B1B /* Debug */,
-				C6C5CCC41FF3E01000834B1B /* Release */,
+				C6D179521FF6557800D0FE3A /* Debug */,
+				C6D179531FF6557800D0FE3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
