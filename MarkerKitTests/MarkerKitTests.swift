@@ -6,31 +6,40 @@
 //  Copyright © 2017 Michael Pchelnikov. All rights reserved.
 //
 
+import UIKit
 import XCTest
 @testable import MarkerKit
 
 class MarkerKitTests: XCTestCase {
     
+    fileprivate var containerView = UIView()
+    
+    //MARK: setUp/tearDown
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    //MARK: tests
+    func testMakeConstraints() {
+        let v1 = UIView()
+        let v2 = UIView()
+        
+        self.containerView.addSubview(v1)
+        self.containerView.addSubview(v2)
+        
+        v1.mrk.top(to: v2, attribute: .top, relation: .equal, constant: 50)
+        v1.mrk.left(to: v2, attribute: .top, relation: .equal, constant: 50)
+        
+        XCTAssertEqual(self.containerView.constraints.count, 2, "Should have 2 constraints installed")
+        
+        v2.mrk.fillSuperview()
+        
+        debugPrint("COUNT: \(self.containerView.constraints.count)")
+        
+        XCTAssertEqual(self.containerView.constraints.count , 6, "Should have 6 constraints installed")
     }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
 }

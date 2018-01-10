@@ -142,7 +142,6 @@ UIView.animate(withDuration: 0.3) {
 ```
 
 ## What to do next
-* Swift Package Manager support
 * Writing tests
 
 ## License

@@ -15,6 +15,8 @@
 		C6C5CCAD1FF3E01000834B1B /* MarkerKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C5CCAC1FF3E01000834B1B /* MarkerKitTests.swift */; };
 		C6D179441FF4E6E500D0FE3A /* MarkerKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D179431FF4E6E500D0FE3A /* MarkerKit.swift */; };
 		C6D179541FF6562600D0FE3A /* MarkerKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D179431FF4E6E500D0FE3A /* MarkerKit.swift */; };
+		C6E189722006108200DC78C6 /* MarkerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6D1794C1FF6557800D0FE3A /* MarkerKit.framework */; };
+		C6FF424020060E34000E89A5 /* MarkerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6D1794C1FF6557800D0FE3A /* MarkerKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6E189722006108200DC78C6 /* MarkerKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6FF424020060E34000E89A5 /* MarkerKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +72,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C6A3341720060BEC00192C70 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C6C5CC8B1FF3E01000834B1B = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +87,7 @@
 				C6C5CCAB1FF3E01000834B1B /* MarkerKitTests */,
 				C6D1794D1FF6557800D0FE3A /* MarkerKit */,
 				C6C5CC951FF3E01000834B1B /* Products */,
+				C6A3341720060BEC00192C70 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -466,7 +478,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarkerKit.app/MarkerKit";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSExample.app/iOSExample";
 			};
 			name = Debug;
 		};
@@ -483,7 +495,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarkerKit.app/MarkerKit";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSExample.app/iOSExample";
 			};
 			name = Release;
 		};
