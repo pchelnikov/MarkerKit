@@ -1,7 +1,12 @@
 ![MarkerKit](https://github.com/pchelnikov/MarkerKit/blob/master/Assets/marker-kit.jpg)
 
 # MarkerKit
-Lightweight and easy to use wrapper for Auto Layout Constraints (iOS 8+ support), inspired by: [https://github.com/ustwo/autolayout-helper-swift](https://github.com/ustwo/autolayout-helper-swift)
+Lightweight and easy to use wrapper for Auto Layout Constraints (iOS 8+ support), inspired by [https://github.com/ustwo/autolayout-helper-swift](https://github.com/ustwo/autolayout-helper-swift)
+
+[![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/pchelnikov/MarkerKit/blob/master/LICENSE)
+[![Platform](https://img.shields.io/cocoapods/p/MarkerKit.svg?style=flat)](https://github.com/SnapKit/SnapKit)
+[![Cocoapods Compatible](https://img.shields.io/cocoapods/v/MarkerKit.svg)](https://cocoapods.org/pods/MarkerKit)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 ## Requirements
 
