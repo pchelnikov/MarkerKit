@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'MarkerKit'
-  s.version          = '1.0.0'
+  s.version          = '1.1.0'
   s.summary          = 'Lightweight and easy to use wrapper for Auto Layout Constraints'
   s.homepage         = 'https://github.com/pchelnikov/MarkerKit'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
