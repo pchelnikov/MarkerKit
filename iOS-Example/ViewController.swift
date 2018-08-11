@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     private let leftTopView = UIView()
     private let rightBottomView = UIView()
     private let centerView = UIView()
+    private let subCenterView = UIView()
     private let secondCenterView = UIView()
 
     override func viewDidLoad() {
@@ -28,11 +29,13 @@ class ViewController: UIViewController {
         leftTopView.backgroundColor = UIColor.blue.withAlphaComponent(0.5)
         rightBottomView.backgroundColor = UIColor.green.withAlphaComponent(0.5)
         centerView.backgroundColor = UIColor.red.withAlphaComponent(0.5)
+        subCenterView.backgroundColor = UIColor.black.withAlphaComponent(0.5)
         secondCenterView.backgroundColor = UIColor.yellow.withAlphaComponent(0.5)
         
         view.addSubview(leftTopView)
         view.addSubview(rightBottomView)
         view.addSubview(centerView)
+        view.addSubview(subCenterView)
         view.addSubview(secondCenterView)
     }
     
@@ -55,5 +58,9 @@ class ViewController: UIViewController {
         secondCenterView.mrk.leading(to: centerView, attribute: .centerX, relation: .equal, constant: 0)
         secondCenterView.mrk.width(100)
         secondCenterView.mrk.height(70)
+
+        subCenterView.mrk.center(to: secondCenterView)
+        subCenterView.mrk.width(30)
+        subCenterView.mrk.height(30)
     }
 }
