@@ -57,42 +57,42 @@ public struct MarkerConstraintView {
     
     //MARK: sides
     @discardableResult
-    public func leading(to view: Any?, attribute: NSLayoutAttribute = .leading, relation: NSLayoutRelation = .equal, constant: CGFloat = 0.0) -> NSLayoutConstraint {
+    public func leading(to view: Any?, attribute: NSLayoutConstraint.Attribute = .leading, relation: NSLayoutConstraint.Relation = .equal, constant: CGFloat = 0.0) -> NSLayoutConstraint {
         let constraint = makeConstraint(attribute: .leading, toView: view, attribute: attribute, relation: relation, constant: constant)
         addConstraintToSuperview(constraint)
         return constraint
     }
 
     @discardableResult
-    public func trailing(to view: Any?, attribute: NSLayoutAttribute = .trailing, relation: NSLayoutRelation = .equal, constant: CGFloat = 0.0) -> NSLayoutConstraint {
+    public func trailing(to view: Any?, attribute: NSLayoutConstraint.Attribute = .trailing, relation: NSLayoutConstraint.Relation = .equal, constant: CGFloat = 0.0) -> NSLayoutConstraint {
         let constraint = makeConstraint(attribute: .trailing, toView: view, attribute: attribute, relation: relation, constant: constant)
         addConstraintToSuperview(constraint)
         return constraint
     }
     
     @discardableResult
-    public func left(to view: Any?, attribute: NSLayoutAttribute = .left, relation: NSLayoutRelation = .equal, constant: CGFloat = 0.0) -> NSLayoutConstraint {
+    public func left(to view: Any?, attribute: NSLayoutConstraint.Attribute = .left, relation: NSLayoutConstraint.Relation = .equal, constant: CGFloat = 0.0) -> NSLayoutConstraint {
         let constraint = makeConstraint(attribute: .left, toView: view, attribute: attribute, relation: relation, constant: constant)
         addConstraintToSuperview(constraint)
         return constraint
     }
     
     @discardableResult
-    public func right(to view: Any?, attribute: NSLayoutAttribute = .right, relation: NSLayoutRelation = .equal, constant: CGFloat = 0.0) -> NSLayoutConstraint {
+    public func right(to view: Any?, attribute: NSLayoutConstraint.Attribute = .right, relation: NSLayoutConstraint.Relation = .equal, constant: CGFloat = 0.0) -> NSLayoutConstraint {
         let constraint = makeConstraint(attribute: .right, toView: view, attribute: attribute, relation: relation, constant: constant)
         addConstraintToSuperview(constraint)
         return constraint
     }
 
     @discardableResult
-    public func top(to view: Any?, attribute: NSLayoutAttribute = .top, relation: NSLayoutRelation = .equal, constant: CGFloat = 0.0) -> NSLayoutConstraint {
+    public func top(to view: Any?, attribute: NSLayoutConstraint.Attribute = .top, relation: NSLayoutConstraint.Relation = .equal, constant: CGFloat = 0.0) -> NSLayoutConstraint {
         let constraint = makeConstraint(attribute: .top, toView: view, attribute: attribute, relation: relation, constant: constant)
         addConstraintToSuperview(constraint)
         return constraint
     }
     
     @discardableResult
-    public func bottom(to view: Any?, attribute: NSLayoutAttribute = .bottom, relation: NSLayoutRelation = .equal, constant: CGFloat = 0.0) -> NSLayoutConstraint {
+    public func bottom(to view: Any?, attribute: NSLayoutConstraint.Attribute = .bottom, relation: NSLayoutConstraint.Relation = .equal, constant: CGFloat = 0.0) -> NSLayoutConstraint {
         let constraint = makeConstraint(attribute: .bottom, toView: view, attribute: attribute, relation: relation, constant: constant)
         addConstraintToSuperview(constraint)
         return constraint
@@ -100,14 +100,14 @@ public struct MarkerConstraintView {
     
     //MARK: centering
     @discardableResult
-    public func centerX(to view: Any?, relation: NSLayoutRelation = .equal, constant: CGFloat = 0.0) -> NSLayoutConstraint {
+    public func centerX(to view: Any?, relation: NSLayoutConstraint.Relation = .equal, constant: CGFloat = 0.0) -> NSLayoutConstraint {
         let constraint = makeConstraint(attribute: .centerX, toView: view, attribute: .centerX, relation: relation, constant: constant)
         addConstraintToSuperview(constraint)
         return constraint
     }
 
     @discardableResult
-    public func centerY(to view: Any?, relation: NSLayoutRelation = .equal, constant: CGFloat = 0.0) -> NSLayoutConstraint {
+    public func centerY(to view: Any?, relation: NSLayoutConstraint.Relation = .equal, constant: CGFloat = 0.0) -> NSLayoutConstraint {
         let constraint = makeConstraint(attribute: .centerY, toView: view, attribute: .centerY, relation: relation, constant: constant)
         addConstraintToSuperview(constraint)
         return constraint
@@ -124,7 +124,7 @@ public struct MarkerConstraintView {
 
     //MARK: measurement
     @discardableResult
-    public func width(to view: Any?, relation: NSLayoutRelation = .equal, constant: CGFloat) -> NSLayoutConstraint {
+    public func width(to view: Any?, relation: NSLayoutConstraint.Relation = .equal, constant: CGFloat) -> NSLayoutConstraint {
         let constraint = makeConstraint(attribute: .width, toView: view, attribute: .width, relation: relation, constant: constant)
         addConstraintToSuperview(constraint)
         return constraint
@@ -138,7 +138,7 @@ public struct MarkerConstraintView {
     }
 
     @discardableResult
-    public func height(to view: Any?, relation: NSLayoutRelation = .equal, constant: CGFloat) -> NSLayoutConstraint {
+    public func height(to view: Any?, relation: NSLayoutConstraint.Relation = .equal, constant: CGFloat) -> NSLayoutConstraint {
         let constraint = makeConstraint(attribute: .height, toView: view, attribute: .height, relation: relation, constant: constant)
         addConstraintToSuperview(constraint)
         return constraint
@@ -158,7 +158,7 @@ public struct MarkerConstraintView {
         self.view.superview?.addConstraint(constraint)
     }
     
-    fileprivate func makeConstraint(attribute attr1: NSLayoutAttribute, toView: Any?, attribute attr2: NSLayoutAttribute, relation: NSLayoutRelation, constant: CGFloat) -> NSLayoutConstraint {
+    fileprivate func makeConstraint(attribute attr1: NSLayoutConstraint.Attribute, toView: Any?, attribute attr2: NSLayoutConstraint.Attribute, relation: NSLayoutConstraint.Relation, constant: CGFloat) -> NSLayoutConstraint {
         
         let constraint = NSLayoutConstraint(
             item: self.view,

@@ -28,7 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C6C5CCA71FF3E01000834B1B"
+               BuildableName = "MarkerKitTests.xctest"
+               BlueprintName = "MarkerKitTests"
+               ReferencedContainer = "container:MarkerKit.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "C6D1794B1FF6557800D0FE3A"
+            BuildableName = "MarkerKit.framework"
+            BlueprintName = "MarkerKit"
+            ReferencedContainer = "container:MarkerKit.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
