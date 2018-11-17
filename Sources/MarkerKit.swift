@@ -34,27 +34,41 @@ public extension MarkerView {
     }
 }
 
+public extension MarkerConstraintView {
+
+    //MARK: convinient extensions
+
+    @discardableResult
+    public func fillSuperview(_ edges: UIEdgeInsets = UIEdgeInsets.zero, usingSafeArea: Bool = true) -> [NSLayoutConstraint] {
+        var constraints: [NSLayoutConstraint] = []
+
+        if let superview = self.view.superview {
+            let superviewArea: Any = {
+                guard usingSafeArea else { return superview }
+
+                if #available(iOS 11.0, *) {
+                    return superview.safeAreaLayoutGuide
+                } else {
+                    return superview
+                }
+            }()
+
+            let topConstraint = top(to: superviewArea, constant: edges.top)
+            let leadingConstraint = leading(to: superviewArea, constant: edges.left)
+            let bottomConstraint = bottom(to: superviewArea, constant: -edges.bottom)
+            let trailingConstraint = trailing(to: superviewArea, constant: -edges.right)
+
+            constraints = [topConstraint, leadingConstraint, bottomConstraint, trailingConstraint]
+        }
+
+        return constraints
+    }
+}
+
 public struct MarkerConstraintView {
     
     //MARK: public
-    
-    //MARK: filling
-    @discardableResult
-    public func fillSuperview(_ edges: UIEdgeInsets = UIEdgeInsets.zero) -> [NSLayoutConstraint] {
-        var constraints: [NSLayoutConstraint] = []
-        
-        if let superview = self.view.superview {
-            let topConstraint = top(to: superview, constant: edges.top)
-            let leadingConstraint = leading(to: superview, constant: edges.left)
-            let bottomConstraint = bottom(to: superview, constant: -edges.bottom)
-            let trailingConstraint = trailing(to: superview, constant: -edges.right)
-            
-            constraints = [topConstraint, leadingConstraint, bottomConstraint, trailingConstraint]
-        }
-        
-        return constraints
-    }
-    
+
     //MARK: sides
     @discardableResult
     public func leading(to view: Any?, attribute: NSLayoutConstraint.Attribute = .leading, relation: NSLayoutConstraint.Relation = .equal, constant: CGFloat = 0.0) -> NSLayoutConstraint {
