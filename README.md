@@ -11,8 +11,8 @@ A lightweight and easy to use wrapper for Auto Layout Constraints (iOS 8+ suppor
 ## Requirements
 
 - iOS 8.0+
-- Xcode 9.0+
-- Swift 4.0+
+- Xcode 10.2+
+- Swift 5.0+
 
 ## Installation
 

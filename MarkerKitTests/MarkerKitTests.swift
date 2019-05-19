@@ -38,8 +38,6 @@ class MarkerKitTests: XCTestCase {
         
         v2.mrk.fillSuperview()
         
-        debugPrint("COUNT: \(self.containerView.constraints.count)")
-        
-        XCTAssertEqual(self.containerView.constraints.count , 6, "Should have 6 constraints installed")
+        XCTAssertEqual(self.containerView.constraints.count, 10, "Should have 10 constraints installed")
     }
 }

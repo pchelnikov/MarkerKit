@@ -29,7 +29,7 @@ import UIKit
 public typealias MarkerView = UIView
 
 public extension MarkerView {
-    public var mrk: MarkerConstraintView {
+    var mrk: MarkerConstraintView {
         return MarkerConstraintView(view: self)
     }
 }
@@ -39,7 +39,7 @@ public extension MarkerConstraintView {
     //MARK: convinient extensions
 
     @discardableResult
-    public func fillSuperview(_ edges: UIEdgeInsets = UIEdgeInsets.zero, usingSafeArea: Bool = true) -> [NSLayoutConstraint] {
+    func fillSuperview(_ edges: UIEdgeInsets = UIEdgeInsets.zero, usingSafeArea: Bool = true) -> [NSLayoutConstraint] {
         var constraints: [NSLayoutConstraint] = []
 
         if let superview = self.view.superview {

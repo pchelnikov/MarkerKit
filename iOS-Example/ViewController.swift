@@ -40,11 +40,12 @@ class ViewController: UIViewController {
     }
     
     private func setupConstraints() {
+
         let viewSafeArea: Any = {
             if #available(iOS 11.0, *) {
                 return view.safeAreaLayoutGuide
             } else {
-                return view
+                return view!
             }
         }()
 
